@@ -1,0 +1,22 @@
+User:
+  connection: doctrine
+  tableName: 'shzambles.sUser'
+  columns:
+    userid:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: 'shzambles."sUser_userId_seq"'
+    login:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    password:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
