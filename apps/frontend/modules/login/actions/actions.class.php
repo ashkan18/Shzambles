@@ -19,7 +19,18 @@ class loginActions extends sfActions
   {
       //$this->selectedMenuItem = "login";
       $this->getContext()->getRequest()->setAttribute('selectedMenuItem', 'login');
+      
+      $this->form = new LoginForm();
 
+  }
+  
+  public function executeSubmit(sfWebRequest $request)
+  {
+    $this->forward404Unless($request->isMethod('post'));
+    
+    $this->result = "success";
+    
+    
   }
   
   public function executeDisks($request)

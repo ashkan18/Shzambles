@@ -1,6 +1,10 @@
-<h1>Hello World</h1>
-
-<?php
-
-    //
-?>
+<form action="<?php echo url_for('login/submit') ?>" method="POST">
+  <table>
+    <?php echo $form ?>
+    <tr>
+      <td colspan="2">
+        <input type="submit" />
+      </td>
+    </tr>
+  </table>
+</form>
