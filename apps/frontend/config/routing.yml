@@ -1,10 +1,17 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+
+disks:
+  url:   login/disks
+  param: { module: login, action: disks }
+
+
 # default rules
 homepage:
   url:   /
   param: { module: login, action: index }
+
 
 # generic rules
 # please, remove them by adding more specific rules

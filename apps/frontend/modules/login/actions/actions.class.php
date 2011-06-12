@@ -17,17 +17,14 @@ class loginActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    //$this->forward('default', 'module');
-      
-      $i = 3;
-      echo $i;
-      $i = $i + 3;
-      $s = $i/3;
-      
+      //$this->selectedMenuItem = "login";
+      $this->getContext()->getRequest()->setAttribute('selectedMenuItem', 'login');
+
   }
   
-  public function executeSubmit(sfWebRequest $request)
+  public function executeDisks($request)
   {
-      
+      //$this->selectedMenuItem = "disks";
+       $this->getContext()->getRequest()->setAttribute('selectedMenuItem', 'disks');
   }
 }

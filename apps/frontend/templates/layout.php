@@ -9,6 +9,18 @@
     <?php include_javascripts() ?>
   </head>
   <body>
+      <!-- Wraps the whole page -->
+    <div id="wrapper">
+    
+    <!-- menu -->
+    <?php 
+        include_partial('global/menu', 
+        array('selectedMenuItem' => $sf_request->getAttribute('selectedMenuItem')));
+    ?>
+
     <?php echo $sf_content ?>
+    
+    <!-- closes wrapper -->
+    </div>
   </body>
 </html>
